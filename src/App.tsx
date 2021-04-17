@@ -2,7 +2,10 @@ import './App.css'
 
 import { 
   Navbar,
-  Sourdough
+  Sourdough,
+  Contact,
+  NotFound,
+  Footer
 } from './components'
 
 import { 
@@ -25,12 +28,15 @@ export default function App() {
           <div>Other</div>
         </Route>
         <Route path='/about'>
-          <div>About</div>
+          <Contact />
         </Route>
         <Route path='*'>
-          <div>404</div>
+          <NotFound />
         </Route>
       </Switch>
+
+      <Footer />
+
     </Router>
     
   )

@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="container navbar">
       <Link to='/'>Hem</Link>
       <nav className="nav-links">
-        <Link to='/other'>Annat</Link>
+        {/* <Link to='/other'>Annat</Link> */}
         <Link to='/about'>Kontakt</Link>
       </nav>
     </div>

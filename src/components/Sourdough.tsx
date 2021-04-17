@@ -36,9 +36,9 @@ export default function Sourdough() {
       <h3 className="center-text">Beräkna mängder genom att ange hydrering, mängden mjöl samt hur mycket salt.</h3>
 
       <form className="content-form">
-        <label htmlFor="hydration">Hydrering:</label>
+        <label htmlFor="hydration">Hydrering (%):</label>
         <input id="hydration" type="number" onChange={(e) => setHydration(e.target.value)} value={hydration} placeholder="Ange hydrering i procent" max={100} min={0} />
-        <label htmlFor="flour">Mjöl:</label>
+        <label htmlFor="flour">Mjöl (g):</label>
         <input id="flour" type="number" onChange={(e) => setFlour(e.target.value)} value={flour} placeholder="Ange mjöl i gram" />
         <label htmlFor="salt">Salt:</label>
         <div className="salt-container">
