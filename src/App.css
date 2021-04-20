@@ -124,7 +124,7 @@ button {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media screen and (max-height: 736px) {
+@media screen and (max-height: 812px) {
   .footer {
     position: relative;
   }
