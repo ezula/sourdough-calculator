@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sourdough-calculator/static/css/main.8f5e87e3.chunk.css",
-    "main.js": "/sourdough-calculator/static/js/main.0c013305.chunk.js",
-    "main.js.map": "/sourdough-calculator/static/js/main.0c013305.chunk.js.map",
+    "main.css": "/sourdough-calculator/static/css/main.03ecaf46.chunk.css",
+    "main.js": "/sourdough-calculator/static/js/main.db2e71cd.chunk.js",
+    "main.js.map": "/sourdough-calculator/static/js/main.db2e71cd.chunk.js.map",
     "runtime-main.js": "/sourdough-calculator/static/js/runtime-main.f0339ad7.js",
     "runtime-main.js.map": "/sourdough-calculator/static/js/runtime-main.f0339ad7.js.map",
-    "static/js/2.788c894f.chunk.js": "/sourdough-calculator/static/js/2.788c894f.chunk.js",
-    "static/js/2.788c894f.chunk.js.map": "/sourdough-calculator/static/js/2.788c894f.chunk.js.map",
+    "static/js/2.f8969224.chunk.js": "/sourdough-calculator/static/js/2.f8969224.chunk.js",
+    "static/js/2.f8969224.chunk.js.map": "/sourdough-calculator/static/js/2.f8969224.chunk.js.map",
     "static/js/3.7556e314.chunk.js": "/sourdough-calculator/static/js/3.7556e314.chunk.js",
     "static/js/3.7556e314.chunk.js.map": "/sourdough-calculator/static/js/3.7556e314.chunk.js.map",
     "index.html": "/sourdough-calculator/index.html",
-    "static/css/main.8f5e87e3.chunk.css.map": "/sourdough-calculator/static/css/main.8f5e87e3.chunk.css.map",
-    "static/js/2.788c894f.chunk.js.LICENSE.txt": "/sourdough-calculator/static/js/2.788c894f.chunk.js.LICENSE.txt"
+    "static/css/main.03ecaf46.chunk.css.map": "/sourdough-calculator/static/css/main.03ecaf46.chunk.css.map",
+    "static/js/2.f8969224.chunk.js.LICENSE.txt": "/sourdough-calculator/static/js/2.f8969224.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f0339ad7.js",
-    "static/js/2.788c894f.chunk.js",
-    "static/css/main.8f5e87e3.chunk.css",
-    "static/js/main.0c013305.chunk.js"
+    "static/js/2.f8969224.chunk.js",
+    "static/css/main.03ecaf46.chunk.css",
+    "static/js/main.db2e71cd.chunk.js"
   ]
 }
