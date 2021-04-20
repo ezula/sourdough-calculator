@@ -73,7 +73,7 @@ export default function Sourdough() {
         salt={salt} 
       />
 
-      <p>* Surdegsgrunden är 100% hydrerad.</p>
+      <p>* Surdegsgrunden består av lika delar mjöl och vatten.</p>
 
     </div>
   );
