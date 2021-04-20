@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sourdough-calculator/static/css/main.03ecaf46.chunk.css",
-    "main.js": "/sourdough-calculator/static/js/main.db2e71cd.chunk.js",
-    "main.js.map": "/sourdough-calculator/static/js/main.db2e71cd.chunk.js.map",
+    "main.js": "/sourdough-calculator/static/js/main.3942276e.chunk.js",
+    "main.js.map": "/sourdough-calculator/static/js/main.3942276e.chunk.js.map",
     "runtime-main.js": "/sourdough-calculator/static/js/runtime-main.f0339ad7.js",
     "runtime-main.js.map": "/sourdough-calculator/static/js/runtime-main.f0339ad7.js.map",
     "static/js/2.f8969224.chunk.js": "/sourdough-calculator/static/js/2.f8969224.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f0339ad7.js",
     "static/js/2.f8969224.chunk.js",
     "static/css/main.03ecaf46.chunk.css",
-    "static/js/main.db2e71cd.chunk.js"
+    "static/js/main.3942276e.chunk.js"
   ]
 }
