@@ -19,6 +19,7 @@
   font-size: 2em;
   border-radius: 10px;
   background-color: #FFE4C4;
+  margin-bottom: 10px;
 }
 
 .ratios-container p {
@@ -71,7 +72,7 @@ button {
   border-radius: 10px;
 }
 
-.salt-container {
+.slider-container {
   display: contents;
 }
 
@@ -83,11 +84,44 @@ button {
   width: 100%;
   background-color: white;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
 }
 
-.small-text {
-  font-size: 0.6em;
+.top-padding {
+  margin-top: 10px;
+}
+
+.footer-padding {
+  padding-left: 10px;
+}
+
+.sourdough-combo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#sourdough {
+  flex-grow: 2;
+  margin-right: 20px;
+  order: 1;
+}
+
+.sourdough-check {
+  order: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: default;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media screen and (max-height: 736px) {
