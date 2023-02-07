@@ -13,6 +13,7 @@
 .ratios-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   border: 1px solid;
   box-shadow: 5px 10px;
@@ -22,9 +23,15 @@
   margin-bottom: 10px;
 }
 
-.ratios-container p {
-  text-align: center;
-  margin: 10px;
+.ratios-label {
+  text-align: right;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  font-weight: 300;
+}
+
+.ratios-val {
+  text-align: right;
 }
 
 .navbar {
@@ -82,9 +89,9 @@ button {
 
 .footer {
   width: 100%;
-  background-color: white;
   position: fixed;
   bottom: 10px;
+  text-shadow: #FC0 1px 0 10px;
 }
 
 .top-padding {
@@ -122,6 +129,11 @@ button {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.brodtext {
+  font-size: 1.2em;
+  text-align: center;
 }
 
 @media screen and (max-height: 812px) {

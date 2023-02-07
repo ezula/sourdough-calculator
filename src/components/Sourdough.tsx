@@ -57,7 +57,7 @@ export default function Sourdough() {
           <div className="sourdough-combo">
             <input id="sourdough" type="range" min="0" max="50" onChange={(e) => setSourdoughPercentage(e.target.value)} value={sourdoughPercentage} />
             <div className="sourdough-check noselect" onClick={() => setIncludeSourdough((v) => !v)}>
-              <input type="checkbox" checked={includeSourdough} />
+              <input type="checkbox" checked={includeSourdough} onChange={() => null} />
               <span>Räkna in surdegen i totala hydreringen</span>
             </div>
           </div>

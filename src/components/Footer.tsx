@@ -2,7 +2,7 @@
 export default function Footer () {
   return (
     <footer className="footer">
-      <span className="footer-padding">Copyright (C) Mikael Svens 2021.</span>
+      <span className="footer-padding">Powered by Svens Tech AB.</span>
     </footer>
   )
 }
