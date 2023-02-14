@@ -47,6 +47,10 @@
   color: brown;
 }
 
+.navbar a:hover {
+  color: rgb(255, 115, 0);
+}
+
 .nav-links a {
   padding: 0 10px;
 }
@@ -133,6 +137,16 @@ button {
 .brodtext {
   font-size: 1.2em;
   text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-height: 812px) {

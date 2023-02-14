@@ -13,6 +13,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import AboutBread from './components/AboutBread'
 
 export default function App() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
         </Route>
         <Route path='/about'>
           <Contact />
+        </Route>
+        <Route path='/about-bread'>
+          <AboutBread />
         </Route>
         <Route path='*'>
           <NotFound />
