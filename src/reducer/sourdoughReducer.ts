@@ -1,13 +1,16 @@
+type SourdoughReducer = (_state: SourdoughState, action: SourdoughActions) => SourdoughState
+
 type SourdoughState = {
-  water: number
+  finalWater: number
   sourdough: number
   salt: number
   finalFlour: number
 }
 
 type CalculateAction = {
-  type: 'calc'
-  flour: number
+  type: 'calc',
+  water?: number,
+  flour?: number
   hydration: number
   saltPercentage: number
   sourdoughPercentage: number
@@ -17,26 +20,43 @@ type CalculateAction = {
 type SourdoughActions = CalculateAction;
 
 const sourdoughReduder = (_state: SourdoughState, action: SourdoughActions) => {
-  if (action.type === 'calc') {
-    const { flour, hydration, saltPercentage, sourdoughPercentage, includeSourdough } = action;
+  const { flour, water, hydration, saltPercentage, sourdoughPercentage, includeSourdough } = action;
+  if (action.type !== 'calc') {
+    return _state;
+  }
 
-    const sourdoughInGrams = flour * (sourdoughPercentage / 100)
-    let halfOfTheSourdoughInGrams = 0
-
-    if (includeSourdough) {
-      halfOfTheSourdoughInGrams = sourdoughInGrams / 2
-    }
-
+  if (!flour && !water) {
     return {
-      water: Math.floor(flour * (hydration / 100) - halfOfTheSourdoughInGrams),
-      sourdough: Math.floor(flour * (sourdoughPercentage / 100)),
-      salt: Math.floor(flour * (saltPercentage / 100)),
-      finalFlour: Math.floor(flour - halfOfTheSourdoughInGrams)
+      finalWater: 0,
+      sourdough: 0,
+      salt: 0,
+      finalFlour: 0
     }
-  } else {
-    throw new Error('Unsupported Action')
+  }
+
+  const sourdoughInGrams = (flour || (water! * (100 / hydration))) * (sourdoughPercentage / 100)
+  let halfOfTheSourdoughInGrams = 0
+
+  if (includeSourdough) {
+    halfOfTheSourdoughInGrams = sourdoughInGrams / 2
+  }
+
+  const calculatedFlour = flour
+    ? flour - halfOfTheSourdoughInGrams
+    : water! * (100 / hydration) - halfOfTheSourdoughInGrams
+  const calculatedWater = flour
+    ? flour * (hydration / 100) - halfOfTheSourdoughInGrams
+    : water! - halfOfTheSourdoughInGrams  
+
+  const calculatedFlourWithouthSourdough = calculatedFlour + halfOfTheSourdoughInGrams;
+
+  return {
+    finalWater: Math.round(calculatedWater),
+    sourdough: Math.round(calculatedFlourWithouthSourdough * (sourdoughPercentage / 100)),
+    salt: Math.round(calculatedFlour * (saltPercentage / 100)),
+    finalFlour: Math.round(calculatedFlour)
   }
 }
 
-export { sourdoughReduder }
-export type { SourdoughState, SourdoughActions }
+export default sourdoughReduder
+export type { SourdoughState, SourdoughActions, SourdoughReducer }
